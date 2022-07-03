@@ -4,7 +4,6 @@ function Homepage() {
   return (
     <div className="relative w-screen min-h-[500px] md:min-h-[600px] xl:min-h-screen  bg-gradient-to-r from-gray-50  to-gray-300 pb-40">
       <Header />
-      {/* main div */}
       <div className="md:flex md:items-center ">
         <div className="w-full h-full flex flex-col justify-center pl-14 pt-10 pr-10 space-y-6 md:pt-0 md:space-y-10 md:pl-16 md:pr-0 xl:pt-0 xl:pl-40 xl:pb-24 md:pb-52">
           <h1 className=" font-space_mono text-2xl md:text-4xl xl:text-6xl text-black font-bold">
@@ -66,7 +65,6 @@ function Homepage() {
           </div>
         </div>
 
-        {/* right side */}
         <div className="w-full h-48 bg-white absolute -bottom-6 left-0 md:h-[180px] xl:w-full xl:h-48 xl:bg-white xl:absolute xl:-bottom-8 xl:left-0  "></div>
         <div className="bg-white w-32 h-32 border-2  md:w-48 md:h-48 lg:w-60 lg:h-60 flex border-b-4 xl:border-b-8 text-center border-b-orange-600 absolute z-1000 bottom-16 left-10 md:absolute md:z-100 md:bottom-4 md:left-[102px] xl:-bottom-8 xl:left-[260px] 2xl:w-72 2xl:h-72">
           <div className="w-8 md:w-40 md:h-20 h-8 space-y-2 bg-white">

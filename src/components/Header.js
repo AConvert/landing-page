@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +27,17 @@ const Header = () => {
       </div>
 
       <div className="md:hidden ">
-        <div>
+        <div className="space-x-4">
           <MenuIcon
             fontSize="large"
-            className=" text-black cursor-pointer"
+            className=" bg-orange-400 text-black p-1 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600"
             onClick={handleMenu}
           />
+          <FacebookIcon
+            fontSize="large"
+            className="bg-orange-400 text-black p-1 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600"
+          />
         </div>
-        {/* modal */}
         <div
           className={
             isOpen
@@ -56,7 +60,6 @@ const Header = () => {
             >
               SERVIZI
             </a>
-            {/* submodal */}
             <div
               className={
                 openDropdown
@@ -87,7 +90,7 @@ const Header = () => {
       </div>
 
       {/* inline navbar */}
-      <div className="hidden md:flex md:flex-1 md:space-x-10 md:justify-end md:px-8 lg:px-16 lg:flex lg:space-x-24 font-space_mono">
+      <div className="hidden md:flex md:flex-1 md:items-center md:space-x-10 md:justify-end md:px-8 lg:px-16 lg:flex lg:space-x-24 font-space_mono">
         <div className=" rounded-sm border-b-2 border-opacity-0 hover:border-opacity-100 hover:border-orange-600 duration-500">
           <a
             href="#storia"
@@ -132,6 +135,12 @@ const Header = () => {
           >
             CONTATTI
           </a>
+        </div>
+        <div className="bg-orange-400 text-black p-2 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600">
+          <img
+            src="../images/facebook.png"
+            className="h-6 w-6 xl:h-8 xl:w-8 "
+          />
         </div>
       </div>
     </div>

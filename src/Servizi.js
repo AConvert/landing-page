@@ -9,13 +9,7 @@ const Servizi = () => {
   return (
     <div className=" w-screen h-full flex flex-col space-y-10 xl:space-y-28 pb-14 ">
       <Banner />
-      {/* <div className="flex flex-col space-y-2 items-center text-center">
-        <h1 className="font-bold font-space_mono text-lg">
-          La <span className="text-orange-400 text-xl">SOLUZIONE</span> ideale
-          per i tuoi{" "}
-          <span className="text-orange-400 text-xl">INVESTIMENTI</span>...
-        </h1>
-      </div> */}
+
       <div className="w-full flex flex-col space-y-10 xl:space-y-20 pt-6">
         <div
           id="corso"

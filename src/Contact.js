@@ -1,12 +1,11 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
   AOS.init();
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleDone = () => {
     console.log(`Done after 5 loops!`);
@@ -97,13 +96,7 @@ function Contact() {
               cols="30"
               rows="5"
             ></textarea>
-            {/* <button
-              onClick={() => setIsSubmitted(!isSubmitted)}
-              className="mb-3 px-6 hover:bg-orange-600 focus:outline-none p-2 rounded-md bg-orange-400 focus:bg-gray-200"
-              type="submit"
-            >
-              Richiedi Informazioni
-            </button> */}
+
             <input
               className="mb-3 px-6 hover:bg-orange-600 focus:outline-none p-2 rounded-md bg-orange-400 focus:bg-gray-200"
               type="submit"

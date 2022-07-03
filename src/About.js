@@ -1,9 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState } from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -133,23 +130,3 @@ const About = () => {
 };
 
 export default About;
-
-{
-  /* <div className="px-auto w-48 h-48 absolute z-10 top-64 left-0">
-          
-          <Carousel autoPlay={true} infiniteLoop={true}>
-            <div>
-              <img src="../images/certificate_1.jpg" />
-              <p className="legend">Legend 1</p>
-            </div>
-            <div>
-              <img src="../images/certificate_2.jpg" />
-              <p className="legend">Legend 2</p>
-            </div>
-            <div>
-              <img src="../images/certificate_3.jpg" />
-              <p className="legend">Legend 3</p>
-            </div>
-          </Carousel>
-        </div> */
-}
