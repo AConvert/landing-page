@@ -1,5 +1,5 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ const About = () => {
     setOpenModal(!openModal);
   };
 
-  AOS.init();
+  // AOS.init();
 
   const icons = [
     {
@@ -39,8 +39,8 @@ const About = () => {
         <div className="flex flex-col space-y-4 md:space-y-6 ">
           {icons.map(({ url, id, name }) => (
             <div
-              data-aos="fade-right"
-              data-aos-delay="200"
+              // data-aos="fade-right"
+              // data-aos-delay="200"
               className=" flex flex-col space-y-1 items-center justify-center"
             >
               <img

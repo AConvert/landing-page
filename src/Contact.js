@@ -1,12 +1,8 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useRef } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-  AOS.init();
-
   const handleDone = () => {
     console.log(`Done after 5 loops!`);
   };
