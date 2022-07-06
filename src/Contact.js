@@ -128,7 +128,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:space-x-6 lg:space-x-14 items-start bg-orange-400 md:justify-center md:items-center md:pb-10">
+      <div className="flex flex-col items-center  pb-10 md:flex-row md:space-x-6 lg:space-x-14 lg:items-start bg-orange-400 md:justify-center md:items-center md:pb-10">
         <p className="font-space_mono font-semibold text-sm md:text-lg lg:text-xl">
           <span className="font-bold font-oswald text-md md:text-xl lg:text-2xl">
             Email:
