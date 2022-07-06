@@ -127,17 +127,20 @@ function Contact() {
             </div>
           </form>
         </div>
-
-        <div className="flex flex-col items-start">
-          <p className="font-space_mono font-semibold text-sm">
-            <span className="font-bold font-oswald text-md">Email:</span>{" "}
-            frankieazzcrypto@gmail.com
-          </p>
-          <p className="font-space_mono font-semibold text-sm">
-            <span className="font-bold font-oswald text-md">Cellulare:</span>
-            +393313612543
-          </p>
-        </div>
+      </div>
+      <div className="flex flex-col md:flex-row md:space-x-6 lg:space-x-14 items-start bg-orange-400 md:justify-center md:items-center md:pb-10">
+        <p className="font-space_mono font-semibold text-sm md:text-lg lg:text-xl">
+          <span className="font-bold font-oswald text-md md:text-xl lg:text-2xl">
+            Email:
+          </span>
+          frankieazzcrypto@gmail.com
+        </p>
+        <p className="font-space_mono font-semibold text-sm md:text-lg lg:text-xl">
+          <span className="font-bold font-oswald text-md md:text-xl lg:text-2xl">
+            Cellulare:
+          </span>
+          +393313612543
+        </p>
       </div>
     </div>
   );
