@@ -1,8 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Contact() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleDone = () => {
     console.log(`Done after 5 loops!`);
   };
@@ -14,10 +17,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_xvdje3l",
-        "template_bvnrrwu",
+        "service_v1d50mu",
+        "template_lyaanwq",
         form.current,
-        "FsP5p1a9ZotVFDGpI"
+        "peLfaczaavFVqZHWQ"
       )
       .then(
         (result) => {
@@ -58,7 +61,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className="h-full p-6 md:p-8 bg-white backdrop-blur-4xl font-oswald backdrop-filter shadow-lg shadow-gray-400 rounded-lg px-6">
+        <div className="relative h-full p-6 md:p-8 bg-white bg-opacity-60 backdrop-blur-4xl font-oswald backdrop-filter shadow-md shadow-gray-300 rounded-lg px-6">
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -69,36 +72,71 @@ function Contact() {
               required
               placeholder="Nome"
               name="user_name"
-              className="mb-3 p-2 text-black border-b-2 border-b-orange-600 focus:outline-none focus:bg-gray-100"
+              className="mb-3 p-2 text-black shadow-sm shadow-gray-200 bg-white  rounded-lg focus:outline-none focus:bg-gray-100"
             />
             <input
               type="text"
               required
               placeholder="Cognome"
               name="user_surname"
-              className="mb-3 p-2 text-black border-b-2 border-b-orange-600 focus:outline-none focus:bg-gray-100"
+              className="mb-3 p-2 text-black shadow-sm shadow-gray-200 bg-white  rounded-lg focus:outline-none focus:bg-gray-100"
             />
             <input
               type="email"
               required
               placeholder="Email"
               name="user_email"
-              className="mb-3 p-2 text-black border-b-2 border-b-orange-600 focus:outline-none focus:bg-gray-100"
+              className="mb-3 p-2 text-black shadow-sm shadow-gray-200 bg-white  rounded-lg focus:outline-none focus:bg-gray-100"
+            />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              name="user_number"
+              className="mb-3 p-2 text-black shadow-sm shadow-gray-200 bg-white  rounded-lg focus:outline-none focus:bg-gray-100"
             />
             <textarea
-              className="mb-3 p-2 text-black border-b-2 border-b-orange-600 focus:outline-none focus:bg-gray-100"
+              className="mb-3 p-2 text-black shadow-sm shadow-gray-200 bg-white  rounded-lg focus:outline-none focus:bg-gray-100"
               name="message"
               placeholder="Scrivi messaggio..."
               cols="30"
-              rows="5"
+              rows="4"
             ></textarea>
 
             <input
-              className="mb-3 px-6 hover:bg-orange-600 focus:outline-none p-2 rounded-md bg-orange-400 focus:bg-gray-200"
+              onClick={() => setIsOpen(!isOpen)}
+              className="mb-3 px-6 focus:outline-none p-2 rounded-md bg-orange-400 focus:bg-gray-200"
               type="submit"
               value="Richiedi Informazioni"
             />
+
+            <div>
+              <div
+                className={
+                  isOpen
+                    ? "flex px-4 absolute z-100 -bottom-10 left-0 items-center justify-center py-3 space-x-2 bg-gradient-to-r font-bold from-white to-gray-200 font-space_mono text-sm lg:text-lg rounded-md"
+                    : "hidden"
+                }
+              >
+                <img
+                  src="../images/email.png"
+                  loading="lazy"
+                  className="w-10 h-10"
+                />
+                <p>Richiesta mandata con successo</p>
+              </div>
+            </div>
           </form>
+        </div>
+
+        <div className="flex flex-col items-start">
+          <p className="font-space_mono font-semibold text-sm">
+            <span className="font-bold font-oswald text-md">Email:</span>{" "}
+            frankieazzcrypto@gmail.com
+          </p>
+          <p className="font-space_mono font-semibold text-sm">
+            <span className="font-bold font-oswald text-md">Cellulare:</span>
+            +393313612543
+          </p>
         </div>
       </div>
     </div>

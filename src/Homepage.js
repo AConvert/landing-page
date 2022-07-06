@@ -5,7 +5,7 @@ function Homepage() {
     <div className="relative w-screen min-h-[500px] md:min-h-[600px] xl:min-h-screen  bg-gradient-to-r from-gray-50  to-gray-300 pb-40">
       <Header />
       <div className="md:flex md:items-center ">
-        <div className="w-full h-full flex flex-col justify-center pl-14 pt-10 pr-10 space-y-6 md:pt-0 md:space-y-10 md:pl-16 md:pr-0 xl:pt-0 xl:pl-40 xl:pb-24 md:pb-52">
+        <div className="w-full h-full flex flex-col justify-center pl-14 pt-10 pr-10 space-y-12 md:pt-0 md:space-y-10 md:pl-16 md:pr-0 xl:pt-0 xl:pl-40 xl:pb-24 md:pb-52">
           <h1 className=" font-space_mono text-2xl md:text-4xl xl:text-6xl text-black font-bold">
             Investi nel tuo futuro con successo.
           </h1>
@@ -38,17 +38,11 @@ function Homepage() {
 
         <div className="w-full flex justify-center md:pr-20 md:pt-14 xl:pt-24 ">
           <img
-            src="/homepage_photo.png"
-            className=" h-[340px] w-44 md:h-[480px] md:w-[340px] 2xl:h-[600px] 2xl:w-[420px]"
+            src="../images/foto_1.png"
+            className=" h-[340px] w-44 md:h-[450px] md:w-[280px] lg:w-[320px] lg:h-[480px] xl:h-[540px] 2xl:h-[600px] 2xl:w-[420px]"
           />
         </div>
-        <div>
-          <img
-            src="../images/graphic_4.png"
-            className="w-28 h-28 absolute z-100 right-10 bottom-44 md:h-36 md:w-36 md:-right-4 xl:block xl:w-48 xl:h-48 xl:absolute xl:z-100 xl:bottom-[150px] xl:right-16 2xl:h-60 2xl:w-60"
-          />
-        </div>
-        <div className="flex p-1 space-x-1 items-center shadow-sm shadow-black rounded-lg absolute z-100 top-[380px] left-10 bg-white md:absolute md:z-100 md:top-64 md:left-[370px] lg:top-[340px] lg:left-[530px] xl:top-80 xl:left-[780px] 2xl:left-[900px] xl:p-3">
+        <div className="flex p-1 space-x-1 items-center shadow-sm shadow-black rounded-lg absolute z-100 top-[380px] left-10 bg-white md:absolute md:z-100 md:top-64 md:left-[370px] lg:top-[320px] lg:left-[530px] xl:top-80 xl:left-[780px] 2xl:left-[900px] xl:p-3">
           <div className=" border-b-2 xl:flex xl:flex-col xl:space-y-1 xl:border-b-4 border-b-orange-600">
             <h2 className="font-space_mono text-[10px] pt-[2px] md:text-sm">
               Stats

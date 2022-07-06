@@ -30,13 +30,15 @@ const Header = () => {
         <div className="space-x-4">
           <MenuIcon
             fontSize="large"
-            className=" bg-orange-400 text-black p-1 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600"
+            className=" text-black p-1 rounded-md cursor-pointer  hover:bg-orange-400"
             onClick={handleMenu}
           />
-          <FacebookIcon
-            fontSize="large"
-            className="bg-orange-400 text-black p-1 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600"
-          />
+          <a href="https://www.facebook.com/Smart-Investor-106004975491144">
+            <FacebookIcon
+              fontSize="large"
+              className=" text-black p-1 rounded-md cursor-pointer  hover:bg-orange-400"
+            />
+          </a>
         </div>
         <div
           className={
@@ -63,19 +65,19 @@ const Header = () => {
             <div
               className={
                 openDropdown
-                  ? "flex flex-col absolute z-100 bg-gradient-to-r from-gray-50 to-gray-300"
+                  ? "flex flex-col absolute rounded-md z-100 bg-white shadow-sm shadow-gray-400"
                   : "hidden"
               }
             >
               <a
                 href="#corso"
-                className="p-2 rounded-sm text-sm hover:bg-white duration-500 text-black font-space_mono"
+                className="p-2 rounded-t-md   text-sm hover:bg-gray-200  duration-500 text-black font-space_mono"
               >
-                Corso Base
+                Consulenza Base
               </a>
               <a
                 href="#gestione"
-                className="p-2 rounded-sm text-sm hover:bg-white duration-500 text-black font-space_mono"
+                className="p-2 rounded-b-md  text-sm hover:bg-gray-200 duration-500 text-black font-space_mono"
               >
                 Gestione Portafoglio
               </a>
@@ -89,7 +91,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* inline navbar */}
       <div className="hidden md:flex md:flex-1 md:items-center md:space-x-10 md:justify-end md:px-8 lg:px-16 lg:flex lg:space-x-24 font-space_mono">
         <div className=" rounded-sm border-b-2 border-opacity-0 hover:border-opacity-100 hover:border-orange-600 duration-500">
           <a
@@ -118,7 +119,7 @@ const Header = () => {
               href="#corso"
               className="py-2 px-2 md:text-lg lg:text-xl rounded-sm font-oswald border-b-2 border-orange-600 hover:bg-gray-100 duration-500"
             >
-              Corso Base
+              Consulenza Base
             </a>
             <a
               href="#gestione"
@@ -136,11 +137,13 @@ const Header = () => {
             CONTATTI
           </a>
         </div>
-        <div className="bg-orange-400 text-black p-2 rounded-md cursor-pointer shadow-sm shadow-black hover:bg-orange-600">
-          <img
-            src="../images/facebook.png"
-            className="h-6 w-6 xl:h-8 xl:w-8 "
-          />
+        <div className=" text-black p-2 rounded-md cursor-pointer hover:shadow-sm hover:shadow-gray-600 hover:bg-orange-400">
+          <a href="https://www.facebook.com/Smart-Investor-106004975491144">
+            <img
+              src="../images/facebook.png"
+              className="h-6 w-6 xl:h-8 xl:w-8 "
+            />
+          </a>
         </div>
       </div>
     </div>
