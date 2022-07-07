@@ -38,8 +38,8 @@ function Homepage() {
 
         <div className="w-full flex justify-center md:pr-20 md:pt-14 xl:pt-24 ">
           <img
-            src="../images/foto_1.png"
-            className=" h-[340px] w-44 md:h-[450px] md:w-[280px] lg:w-[320px] lg:h-[480px] xl:h-[540px] 2xl:h-[600px] 2xl:w-[420px]"
+            src="../images/foto_4-bg.png"
+            className=" h-[340px] w-72 md:h-[450px] md:w-[400px] lg:w-[500px] lg:h-[480px] xl:h-[540px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px]"
           />
         </div>
         <div className="flex p-1 space-x-1 items-center shadow-sm shadow-black rounded-lg absolute z-100 top-[380px] left-10 bg-white md:absolute md:z-100 md:top-64 md:left-[370px] lg:top-[320px] lg:left-[530px] xl:top-80 xl:left-[780px] 2xl:left-[900px] xl:p-3">

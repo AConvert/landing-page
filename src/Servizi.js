@@ -21,7 +21,7 @@ const Servizi = () => {
             className="h-8 w-8 md:h-10 md:w-10 xl:w-14 xl:h-14"
           />
           <h3 className="font-oswald font-bold text-xl md:text-2xl xl:text-3xl">
-            Consulenza Base
+            Consulenza Crypto
           </h3>
           <p className="font-space_mono text-sm font-semibold md:text-md xl:text-xl">
             Consulenza riservata a chi si affacia al mondo Crypto per la prima
@@ -43,24 +43,29 @@ const Servizi = () => {
         {isOpen && (
           <div className="flex flex-col items-center space-y-4 xl:pb-10 xl:absolute xl:-top-14 xl:left-0 xl:bg-white ">
             <h3 className="font-oswald font-bold text-xl xl:text-3xl">
-              Consulenza Base
+              Consulenza Crypto
             </h3>
-            <p className="font-space_mono text-md tracking-[-1px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12">
-              Questo servizio e’ orientato alla conoscenza del mondo Crypto.
-              Nello specifico, e’ dedicato a tutte le persone che si affacciano
-              per la prima volta e che non possiedono alcuna esperienza in
-              merito. Questa breve consulenza sara' utile nella scoperta in
-              maniera generale di tutti i prodotti disponibili nel quale il
-              nostro cliente avra’ la possibilita’ di intraprendere un percorso
-              di investimento, come a partire dall’ apertura di un conto in
-              Cryptovaluta, chiamato anche Crypto Wallet, fino ai diversi
-              eco-sistemi Blockchain da utilizzare nel mondo delle
-              Nfts(Non-fungible Token) e delle De-fi(sistema di finanza
-              decentralizzata). Alla fine di questo consulenza il cliente
-              acquisira’ una conoscenza notevole dei concetti chiave ed avra’ la
-              possibilita di decidere se proseguire il percorso accompagnato e
-              supportato dalla mia figura o proseguire da solo.
-            </p>
+            <div className="font-space_mono space-y-4 text-md tracking-[-1px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12">
+              <p className="tetx-lg md:text-2xl lg:text-3xl xl:text-4xl  text-orange-400">
+                Non hai abbastanza esperienza oppure è la prima volta che ti
+                affacci al mondo crypto? Chiedi la nostra consulenza:
+              </p>
+              <div className="space-y-2 px-20 xl:px-32">
+                <p>
+                  -Scoprirai in maniera generale tutti i prodotti disponibili
+                </p>
+                <p>-Imparerai come accreditarti presso un exchange</p>
+                <p>
+                  -Apprenderai come creare un wallet sicuro e adatto alle tue
+                  esigenze
+                </p>
+              </div>
+              <p>
+                Durante il percorso di consulenza acquisirai la giusta
+                conoscenza dei concetti chiave per essere sicuro di investire al
+                meglio il tuo denaro!
+              </p>
+            </div>
             <CloseIcon
               onClick={() => setIsOpen(!isOpen)}
               fontSize="large"
@@ -102,14 +107,11 @@ const Servizi = () => {
             <h3 className="font-oswald font-bold text-xl xl:text-3xl">
               Gestione Portafoglio
             </h3>
-            <p className="font-space_mono text-md tracking-[-1px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12  ">
-              Qualora il cliente decidesse di investire nel mondo Crypto, avra’
-              la possibilita di ususfruire del servizio di Gestione Portfolio ed
-              Investimenti. Il cliente avra’ la possibilita’ di scegliere quale
-              strategia di mercato utilizzare in base anche alle proprie
-              esigenze ed a quelle del mercato, naturalmente supportato dalla
-              mia experienza e conoscenza con l’obiettivo di ottenere maggiore
-              successo nel percorso di investimento.
+            <p className="font-space_mono text-md tracking-[-2px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12 xl:pb-10 ">
+              Hai investito e hai bisogno di supporto nella gestione del tuo
+              portfolio? Ti offriamo un supporto professionale, in base alle tue
+              esigenze e quelle del mercato, per gestire al meglio il tuo
+              portfolio e ottenere i migliori risultati.
             </p>
             <CloseIcon
               onClick={() => setIsActive(!isActive)}
