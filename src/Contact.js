@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import emailjs from "@emailjs/browser";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -8,6 +8,11 @@ function Contact() {
 
   const handleDone = () => {
     console.log(`Done after 5 loops!`);
+  };
+
+  const handleSubmission = () => {
+    alert("Richiesta mandata con successo");
+    setIsOpen(!isOpen);
   };
 
   const form = useRef();
@@ -103,28 +108,11 @@ function Contact() {
             ></textarea>
 
             <input
-              onClick={() => setIsOpen(!isOpen)}
-              className="mb-3 px-6 focus:outline-none p-2 rounded-md bg-orange-400 focus:bg-gray-200"
+              onClick={handleSubmission}
+              className="mb-3 px-6 focus:outline-none p-2 rounded-md bg-orange-400"
               type="submit"
               value="Richiedi Informazioni"
             />
-
-            <div>
-              <div
-                className={
-                  isOpen
-                    ? "flex px-4 absolute z-100 -bottom-10 left-0 items-center justify-center py-3 space-x-2 bg-gradient-to-r font-bold from-white to-gray-200 font-space_mono text-sm lg:text-lg rounded-md"
-                    : "hidden"
-                }
-              >
-                <img
-                  src="../images/email.png"
-                  loading="lazy"
-                  className="w-10 h-10"
-                />
-                <p>Richiesta mandata con successo</p>
-              </div>
-            </div>
           </form>
         </div>
       </div>
