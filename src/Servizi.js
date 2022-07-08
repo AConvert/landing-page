@@ -46,11 +46,11 @@ const Servizi = () => {
               Consulenza Crypto
             </h3>
             <div className="font-space_mono space-y-4 text-md tracking-[-1px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12">
-              <p className="tetx-lg md:text-2xl lg:text-3xl xl:text-4xl  text-orange-400">
+              <p className="tetx-lg md:text-2xl lg:text-2xl xl:text-3xl  text-orange-400">
                 Non hai abbastanza esperienza oppure è la prima volta che ti
                 affacci al mondo crypto? Chiedi la nostra consulenza:
               </p>
-              <div className="space-y-2 px-20 xl:px-32">
+              <div className="space-y-2 md:px-20 xl:px-32">
                 <p>
                   -Scoprirai in maniera generale tutti i prodotti disponibili
                 </p>
@@ -104,15 +104,20 @@ const Servizi = () => {
         </div>
         {isActive && (
           <div className="flex flex-col items-center space-y-4 xl:pb-10 xl:absolute xl:top-0 xl:left-0 xl:bg-white ">
-            <h3 className="font-oswald font-bold text-xl xl:text-3xl">
+            <h3 className="font-oswald font-bold text-xl xl:text-3xl pb-4">
               Gestione Portafoglio
             </h3>
-            <p className="font-space_mono text-md tracking-[-2px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12 xl:pb-10 ">
-              Hai investito e hai bisogno di supporto nella gestione del tuo
-              portfolio? Ti offriamo un supporto professionale, in base alle tue
-              esigenze e quelle del mercato, per gestire al meglio il tuo
-              portfolio e ottenere i migliori risultati.
-            </p>
+            <div className="space-y-4 font-space_mono text-md tracking-[-2px] font-semibold px-8 text-justify md:text-xl lg:text-2xl xl:px-12 xl:pb-10 ">
+              <p className="tetx-lg md:text-2xl lg:text-2xl xl:text-3xl  text-orange-400">
+                Hai investito e hai bisogno di supporto nella gestione del tuo
+                portfolio?
+              </p>
+              <p>
+                Ti offriamo un supporto professionale, in base alle tue esigenze
+                e quelle del mercato, per gestire al meglio il tuo portfolio e
+                ottenere i migliori risultati.
+              </p>
+            </div>
             <CloseIcon
               onClick={() => setIsActive(!isActive)}
               fontSize="large"

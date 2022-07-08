@@ -10,7 +10,7 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleSubMenu = () => {
+  const handleSubMenu = (e) => {
     setOpenDropdown(!openDropdown);
   };
 
@@ -59,6 +59,7 @@ const Header = () => {
               onClick={handleSubMenu}
               href="#servizi"
               className="text-sm text-black"
+              aria-hidden="true"
             >
               SERVIZI
             </a>
