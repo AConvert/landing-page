@@ -2,10 +2,10 @@ import Header from "./components/Header";
 
 function Homepage() {
   return (
-    <div className=" w-screen min-h-[500px] md:min-h-[600px] xl:min-h-screen  bg-gradient-to-r from-gray-50  to-gray-300">
+    <div className=" w-screen h-full md:min-h-[600px] xl:min-h-screen  bg-gradient-to-r from-gray-50  to-gray-300">
       <Header />
       <div className="md:flex md:items-center ">
-        <div className="w-full h-full flex flex-col justify-center pl-14 pt-10 pr-10 space-y-6 md:pt-0 md:space-y-10 md:pl-16 md:pr-0 xl:pt-0 xl:pl-40 xl:pb-24 md:pb-52">
+        <div className="w-full h-full flex flex-col justify-center pl-14 pt-24 pr-10 space-y-6 md:pt-0 md:space-y-10 md:pl-16 md:pr-0 xl:pt-0 xl:pl-40 xl:pb-24 md:pb-52">
           <h1 className=" font-space_mono text-2xl md:text-4xl xl:text-6xl text-black font-bold">
             Investi nel tuo futuro con successo.
           </h1>
@@ -36,13 +36,13 @@ function Homepage() {
           </a>
         </div>
 
-        <div className="w-full flex justify-center pt-10 md:pt-14 xl:pt-24 ">
+        <div className="w-full flex justify-center pt-[116px] md:pt-14 xl:pt-24 ">
           <img
             src="../images/main_foto.png"
             className=" h-[340px] w-[300px] md:h-[450px] md:w-[480px] lg:w-[500px] lg:h-[480px] xl:h-[520px] xl:w-[520px] 2xl:h-[600px] 2xl:w-[600px]"
           />
         </div>
-        <div className="flex p-1 space-x-1 items-center shadow-sm shadow-black rounded-lg absolute z-100 top-[380px] left-10 bg-white md:absolute md:z-100 md:top-64 md:left-[370px] lg:top-[320px] lg:left-[530px] xl:top-80 xl:left-[780px] 2xl:left-[900px] xl:p-3">
+        <div className="flex p-1 space-x-1 items-center shadow-sm shadow-black rounded-lg absolute z-100 top-[450px] left-16 bg-white md:absolute md:z-100 md:top-64 md:left-[370px] lg:top-[320px] lg:left-[530px] xl:top-80 xl:left-[780px] 2xl:left-[900px] xl:p-3">
           <div className=" border-b-2 xl:flex xl:flex-col xl:space-y-1 xl:border-b-4 border-b-orange-600">
             <h2 className="font-space_mono text-[10px] pt-[2px] md:text-sm">
               Stats
