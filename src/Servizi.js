@@ -1,24 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Banner from "./components/Banner";
 import CloseIcon from "@mui/icons-material/Close";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Servizi = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    AOS.init();
+  });
 
   return (
-    <div className=" w-screen h-full flex flex-col space-y-16 lg:space-y-20 xl:space-y-28 pb-14 ">
+    <div className="relative w-screen h-full flex flex-col space-y-16 lg:space-y-20 xl:space-y-28 pb-14 xl:mb-52">
       <Banner />
-      <section className="w-full relative space-y-10 lg:space-y-16 xl:flex xl:items-center xl:justify-around xl:space-y-0 xl:px-20">
+      <section
+        data-aos="fade-right"
+        data-aos-delay="200"
+        className="w-full relative space-y-10 lg:space-y-16 xl:flex xl:items-center xl:justify-around xl:space-y-0 xl:px-20"
+      >
         <div
           id="corso"
           className={
-            !isOpen ? "flex flex-col space-y-4 mx-20 xl:w-[50%]" : "hidden"
+            !isOpen ? "flex flex-col space-y-4 mx-20 xl:w-[50%] " : "hidden"
           }
         >
           <img
-            src="../images/cube.png"
-            className="h-8 w-8 md:h-10 md:w-10 xl:w-14 xl:h-14"
+            src="../images/notebook.png"
+            className="h-12 w-12 md:h-16 md:w-16 xl:w-24 xl:h-24"
           />
           <h3 className="font-oswald font-bold text-xl md:text-2xl xl:text-3xl">
             Consulenza Crypto
@@ -41,7 +50,7 @@ const Servizi = () => {
           </div>
         </div>
         {isOpen && (
-          <div className="flex flex-col items-center space-y-4 xl:pb-10 xl:absolute xl:-top-14 xl:left-0 xl:bg-white ">
+          <div className="flex flex-col items-center space-y-4 xl:pb-10 xl:absolute xl:-top-24 xl:left-0 xl:bg-white xl:mb-24">
             <h3 className="font-oswald font-bold text-xl xl:text-3xl">
               Consulenza Crypto
             </h3>
@@ -73,7 +82,7 @@ const Servizi = () => {
             />
           </div>
         )}
-        <div
+        {/* <div
           id="gestione"
           className={
             !isActive ? "flex flex-col space-y-4 mx-20 xl:w-[50%]" : "hidden"
@@ -124,7 +133,7 @@ const Servizi = () => {
               className="rounded-full shadow-md shadow-gray-500 bg-gray-200 hover:bg-orange-400 p-1 cursor-pointer"
             />
           </div>
-        )}
+        )} */}
       </section>
     </div>
   );

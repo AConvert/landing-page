@@ -29,7 +29,7 @@ const About = () => {
   return (
     <div
       id="storia"
-      className="relative pt-20 pb-20 lg:pb-0  xl:pb-14 w-screen  md:mt-20 lg:mt-24 xl:mt-36 xl:flex xl:justify-center xl:items-center"
+      className="relative pt-20 mt-14 pb-20 lg:pb-0  xl:pb-14 w-screen h-screen md:mt-20 lg:mt-24 xl:mt-52 xl:flex xl:justify-center xl:items-center"
     >
       <div className=" flex justify-center items-center space-x-6 pb-10 md:space-x-24 md:pb-20 xl:space-x-10 xl:px-12">
         <div className="flex flex-col space-y-4 md:space-y-6 ">

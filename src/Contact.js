@@ -70,7 +70,7 @@ function Contact() {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="flex flex-col md:text-xl lg:text-2xl"
+            className="flex flex-col md:text-xl lg:text-2xl z-10"
           >
             <input
               type="text"

@@ -4,12 +4,12 @@ const Banner = () => {
   return (
     <div>
       {" "}
-      <div className="w-full h-full flex justify-center md:mt-16 relative xl:mt-10">
+      <div className="w-full h-full flex justify-center mt-12 md:mt-16 relative xl:mt-10">
         <section>
           <div className="flex flex-col items-center space-y-6 xl:flex-row xl:justify-center xl:space-x-10  xl:mx-20">
             <img
-              src="../images/crypto_data_bg.png"
-              className="h-80 w-80 p-2 md:w-[400px] md:h-[400px] xl:w-[520px] xl:h-[520px]"
+              src="../images/crypto_new.jpg"
+              className="h-80 w-80  md:w-[400px] md:h-[400px] xl:w-[520px] xl:h-[520px]"
             />
             <div className="xl:flex xl:flex-col text-center xl:space-y-4 xl:text-left">
               <h1 className="font-bold font-oswald text-lg md:text-2xl xl:text-3xl px-6 md:px-20  xl:px-0">

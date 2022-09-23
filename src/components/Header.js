@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="md:hidden ">
+      <div className="md:hidden">
         <div className="space-x-4">
           <MenuIcon
             fontSize="large"
@@ -54,6 +54,7 @@ const Header = () => {
               </a>
             </div>
           </div>
+
           <div className=" w-full p-2 rounded-sm border-b-2 border-orange-600 hover:bg-white duration-500">
             <a
               onClick={handleSubMenu}
@@ -72,15 +73,9 @@ const Header = () => {
             >
               <a
                 href="#corso"
-                className="p-2 rounded-t-md   text-sm hover:bg-gray-200  duration-500 text-black font-space_mono"
+                className="p-2 rounded-t-md   text-sm hover:bg-orange-400 hover:text-white  duration-500 text-black font-space_mono"
               >
-                Consulenza Base
-              </a>
-              <a
-                href="#gestione"
-                className="p-2 rounded-b-md  text-sm hover:bg-gray-200 duration-500 text-black font-space_mono"
-              >
-                Gestione Portafoglio
+                Consulenza Crypto
               </a>
             </div>
           </div>
@@ -118,15 +113,9 @@ const Header = () => {
           >
             <a
               href="#corso"
-              className="py-2 px-2 md:text-lg lg:text-xl rounded-sm font-oswald border-b-2 border-orange-600 hover:bg-gray-100 duration-500"
+              className="py-2 px-2 md:text-lg lg:text-xl font-oswald border-b-2 border-orange-600 hover:bg-orange-400 hover:text-white hover:scale-y-90 duration-500"
             >
-              Consulenza Base
-            </a>
-            <a
-              href="#gestione"
-              className="py-2 px-2 md:text-lg lg:text-xl rounded-sm font-oswald border-b-2 border-orange-600 hover:bg-gray-100 duration-500"
-            >
-              Gestione Portafoglio
+              Consulenza Crypto
             </a>
           </div>
         </div>
