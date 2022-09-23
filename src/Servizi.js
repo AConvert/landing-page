@@ -22,7 +22,9 @@ const Servizi = () => {
         <div
           id="corso"
           className={
-            !isOpen ? "flex flex-col space-y-4 mx-20 xl:w-[50%] " : "hidden"
+            !isOpen
+              ? "flex flex-col space-y-4 mx-20 md:mx-56 md md:flex md:flex-col md:justify-center xl:w-[50%] "
+              : "hidden"
           }
         >
           <img
